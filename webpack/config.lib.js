@@ -2,7 +2,7 @@ const path=require('path');
 const package=require('../package.json');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: './src/index.tsx',
     output: {
         path: path.resolve( __dirname, '../dist'), //donde se encuentra el archivo, resolve para la ruta relativa
@@ -23,7 +23,7 @@ module.exports = {
                 exclude: /node_modules/,
                 use: [
                     {
-                        loader: 'ts-loader'
+                        loader: 'ts-loader' //puede ser ts-loader
                     },
                 ],
             },
