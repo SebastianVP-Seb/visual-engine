@@ -5,7 +5,8 @@
   "main": "src/index.tsx",
   "module": "build/esm/index.js",
   "scripts": {
-    "build": "webpack --config webpack/config.lib.js"
+    "build": "webpack --config webpack/config.lib.js",
+    "start": "webpack serve --config webpack/config.lib.js"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "@types/react": "^18.0.15",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }

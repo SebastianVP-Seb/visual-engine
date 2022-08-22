@@ -1,7 +1,7 @@
 import React from 'react';
 import { ButtonCoreStyled, IButtonCoreStyled } from './ButtonCore.styled';
 
-//Para propagar con sus elemetos hijo
+//Para propagar con sus elementos hijo
 export interface IButtonCore extends IButtonCoreStyled { };
 
 const ButtonCore:React.FC<IButtonCore> = (props) => {
